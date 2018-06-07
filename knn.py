@@ -29,8 +29,7 @@ def calculaDistancia(lista1, lista2):
     for i in range(4):
         distancia1 = float(lista1[i])
         distancia2 = float(lista2[i])
-
-    distancia += ((distancia1 - distancia2) ** 2)
+        distancia += ((distancia1 - distancia2) ** 2)
     return sqrt(distancia)
     
 
@@ -69,7 +68,7 @@ def openTrainedResults():
    
 
 def countMatches(results, bestResults):
-    count = 0
+    count = 0.0
     for i in range(len(results)):
         if(results[i] == bestResults[i]):
             count +=1
